@@ -44,100 +44,172 @@ class MyHomePage extends StatelessWidget {
       children: <Widget>[
         Container(
             padding: const EdgeInsets.all(8),
-            child: PhotoView(
-              imageProvider: AssetImage(
-                'assets/image1.jpg'),
-              enableRotation: false,
-              maxScale: PhotoViewComputedScale.covered,
-              minScale: PhotoViewComputedScale.contained * 0.6,
-              backgroundDecoration: BoxDecoration(color: Colors.white),
-            )
+            child: PhotoViewGallery.builder(
+              itemCount: images.length,
+              builder: (context, index) {
+                return PhotoViewGalleryPageOptions(
+                  imageProvider: AssetImage(images[index]),
+                  minScale: PhotoViewComputedScale.contained * 0.8,
+                  maxScale: PhotoViewComputedScale.covered * 2,
+                );
+              },
+              scrollPhysics: BouncingScrollPhysics(),
+              backgroundDecoration: BoxDecoration(
+                color: Theme.of(context).canvasColor,
+              ),
+              loadingChild: Center(
+                child: CircularProgressIndicator(),
+              ),
+            ),
           // color: Colors.teal[100],
         ),
         Container(
             padding: const EdgeInsets.all(8),
-            child: PhotoView(
-              imageProvider: AssetImage(
-                  'assets/image2.jpg'),
-              enableRotation: false,
-              maxScale: PhotoViewComputedScale.covered,
-              minScale: PhotoViewComputedScale.contained * 0.6,
-              backgroundDecoration: BoxDecoration(color: Colors.white),
-            )
+            child: PhotoViewGallery.builder(
+              itemCount: images.length,
+              builder: (context, index) {
+                return PhotoViewGalleryPageOptions(
+                  imageProvider: AssetImage(images[index+1]),
+                  minScale: PhotoViewComputedScale.contained * 0.8,
+                  maxScale: PhotoViewComputedScale.covered * 2,
+                );
+              },
+              scrollPhysics: BouncingScrollPhysics(),
+              backgroundDecoration: BoxDecoration(
+                color: Theme.of(context).canvasColor,
+              ),
+              loadingChild: Center(
+                child: CircularProgressIndicator(),
+              ),
+            ),
           // color: Colors.teal[100],
         ),
         Container(
             padding: const EdgeInsets.all(8),
-            child: PhotoView(
-              imageProvider: AssetImage(
-                  'assets/image3.jpg'),
-              enableRotation: false,
-              maxScale: PhotoViewComputedScale.covered,
-              minScale: PhotoViewComputedScale.contained * 0.6,
-              backgroundDecoration: BoxDecoration(color: Colors.white),
-            )
+            child: PhotoViewGallery.builder(
+              itemCount: images.length,
+              builder: (context, index) {
+                return PhotoViewGalleryPageOptions(
+                  imageProvider: AssetImage(images[index+2]),
+                  minScale: PhotoViewComputedScale.contained * 0.8,
+                  maxScale: PhotoViewComputedScale.covered * 2,
+                );
+              },
+              scrollPhysics: BouncingScrollPhysics(),
+              backgroundDecoration: BoxDecoration(
+                color: Theme.of(context).canvasColor,
+              ),
+              loadingChild: Center(
+                child: CircularProgressIndicator(),
+              ),
+            ),
           // color: Colors.teal[100],
         ),
         Container(
             padding: const EdgeInsets.all(8),
-            child: PhotoView(
-              imageProvider: AssetImage(
-                  'assets/image4.jpg'),
-              enableRotation: false,
-              maxScale: PhotoViewComputedScale.covered,
-              minScale: PhotoViewComputedScale.contained * 0.6,
-              backgroundDecoration: BoxDecoration(color: Colors.white),
-            )
+            child:PhotoViewGallery.builder(
+              itemCount: images.length,
+              builder: (context, index) {
+                return PhotoViewGalleryPageOptions(
+                  imageProvider: AssetImage(images[index+3]),
+                  minScale: PhotoViewComputedScale.contained * 0.8,
+                  maxScale: PhotoViewComputedScale.covered * 2,
+                );
+              },
+              scrollPhysics: BouncingScrollPhysics(),
+              backgroundDecoration: BoxDecoration(
+                color: Theme.of(context).canvasColor,
+              ),
+              loadingChild: Center(
+                child: CircularProgressIndicator(),
+              ),
+            ),
           // color: Colors.teal[100],
         ),
         Container(
             padding: const EdgeInsets.all(8),
-            child: PhotoView(
-              imageProvider: AssetImage(
-                  'assets/image5.jpg'),
-              enableRotation: false,
-              maxScale: PhotoViewComputedScale.covered,
-              minScale: PhotoViewComputedScale.contained * 0.6,
-              backgroundDecoration: BoxDecoration(color: Colors.white),
-            )
+            child: PhotoViewGallery.builder(
+              itemCount: images.length,
+              builder: (context, index) {
+                return PhotoViewGalleryPageOptions(
+                  imageProvider: AssetImage(images[index+4]),
+                  minScale: PhotoViewComputedScale.contained * 0.8,
+                  maxScale: PhotoViewComputedScale.covered * 2,
+                );
+              },
+              scrollPhysics: BouncingScrollPhysics(),
+              backgroundDecoration: BoxDecoration(
+                color: Theme.of(context).canvasColor,
+              ),
+              loadingChild: Center(
+                child: CircularProgressIndicator(),
+              ),
+            ),
           // color: Colors.teal[100],
         ),
         Container(
             padding: const EdgeInsets.all(8),
-            child: PhotoView(
-              imageProvider: AssetImage(
-                  'assets/image6.jpg'),
-              enableRotation: false,
-              maxScale: PhotoViewComputedScale.covered,
-              minScale: PhotoViewComputedScale.contained * 0.6,
-              backgroundDecoration: BoxDecoration(color: Colors.white),
-            )
+            child: PhotoViewGallery.builder(
+              itemCount: images.length,
+              builder: (context, index) {
+                return PhotoViewGalleryPageOptions(
+                  imageProvider: AssetImage(images[index+5]),
+                  minScale: PhotoViewComputedScale.contained * 0.8,
+                  maxScale: PhotoViewComputedScale.covered * 2,
+                );
+              },
+              scrollPhysics: BouncingScrollPhysics(),
+              backgroundDecoration: BoxDecoration(
+                color: Theme.of(context).canvasColor,
+              ),
+              loadingChild: Center(
+                child: CircularProgressIndicator(),
+              ),
+            ),
           // color: Colors.teal[100],
 
         ),
         Container(
             padding: const EdgeInsets.all(8),
-            child: PhotoView(
-              imageProvider:AssetImage(
-                  'assets/image7.jpg'),
-              enableRotation: false,
-              maxScale: PhotoViewComputedScale.covered,
-              minScale: PhotoViewComputedScale.contained * 0.6,
-              backgroundDecoration: BoxDecoration(color: Colors.white),
-            )
+            child:PhotoViewGallery.builder(
+              itemCount: images.length,
+              builder: (context, index) {
+                return PhotoViewGalleryPageOptions(
+                  imageProvider: AssetImage(images[index+6]),
+                  minScale: PhotoViewComputedScale.contained * 0.8,
+                  maxScale: PhotoViewComputedScale.covered * 2,
+                );
+              },
+              scrollPhysics: BouncingScrollPhysics(),
+              backgroundDecoration: BoxDecoration(
+                color: Theme.of(context).canvasColor,
+              ),
+              loadingChild: Center(
+                child: CircularProgressIndicator(),
+              ),
+            ),
           // color: Colors.teal[100],
 
         ),
         Container(
             padding: const EdgeInsets.all(8),
-            child: PhotoView(
-              imageProvider:AssetImage(
-                  'assets/image8.jpg'),
-              enableRotation: false,
-              maxScale: PhotoViewComputedScale.covered,
-              minScale: PhotoViewComputedScale.contained * 0.6,
-              backgroundDecoration: BoxDecoration(color: Colors.white),
-            )
+            child: PhotoViewGallery.builder(
+              itemCount: images.length,
+              builder: (context, index) {
+                return PhotoViewGalleryPageOptions(
+                  imageProvider: AssetImage(images[index+7]),
+                  minScale: PhotoViewComputedScale.contained * 0.8,
+                  maxScale: PhotoViewComputedScale.covered * 2,
+                );
+              },
+              scrollPhysics: BouncingScrollPhysics(),
+              backgroundDecoration: BoxDecoration(
+                color: Theme.of(context).canvasColor,
+              ),
+              loadingChild: Center(
+                child: CircularProgressIndicator(),
+              ),
+            ),
           // color: Colors.teal[100],
 
         ),
