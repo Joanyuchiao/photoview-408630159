@@ -13,6 +13,17 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+const images = <String>[
+  'assets/image1.jpg',
+  'assets/image2.jpg',
+  'assets/image3.jpg',
+  'assets/image4.jpg',
+  'assets/image5.jpg',
+  'assets/image6.jpg',
+  'assets/image7.jpg',
+  'assets/image8.jpg',
+];
+
 
 class MyHomePage extends StatelessWidget {
   @override
@@ -34,102 +45,102 @@ class MyHomePage extends StatelessWidget {
         Container(
             padding: const EdgeInsets.all(8),
             child: PhotoView(
-              imageProvider: NetworkImage(
-                  'https://upload.wikimedia.org/wikipedia/commons/5/58/Shiba_inu_taiki.jpg'),
+              imageProvider: AssetImage(
+                'assets/image1.jpg'),
               enableRotation: false,
               maxScale: PhotoViewComputedScale.covered,
               minScale: PhotoViewComputedScale.contained * 0.6,
               backgroundDecoration: BoxDecoration(color: Colors.white),
             )
-            // color: Colors.teal[100],
-            ),
+          // color: Colors.teal[100],
+        ),
         Container(
             padding: const EdgeInsets.all(8),
             child: PhotoView(
-              imageProvider: NetworkImage(
-                  'https://storage.googleapis.com/www-cw-com-tw/article/201810/article-5bd182cf13ebb.jpg'),
+              imageProvider: AssetImage(
+                  'assets/image2.jpg'),
               enableRotation: false,
               maxScale: PhotoViewComputedScale.covered,
               minScale: PhotoViewComputedScale.contained * 0.6,
               backgroundDecoration: BoxDecoration(color: Colors.white),
             )
-            // color: Colors.teal[100],
-            ),
+          // color: Colors.teal[100],
+        ),
         Container(
             padding: const EdgeInsets.all(8),
             child: PhotoView(
-              imageProvider: NetworkImage(
-                  'https://upload.wikimedia.org/wikipedia/commons/1/1f/Oryctolagus_cuniculus_Rcdo.jpg'),
+              imageProvider: AssetImage(
+                  'assets/image3.jpg'),
               enableRotation: false,
               maxScale: PhotoViewComputedScale.covered,
               minScale: PhotoViewComputedScale.contained * 0.6,
               backgroundDecoration: BoxDecoration(color: Colors.white),
             )
-            // color: Colors.teal[100],
-            ),
+          // color: Colors.teal[100],
+        ),
         Container(
             padding: const EdgeInsets.all(8),
             child: PhotoView(
-              imageProvider: NetworkImage(
-                  'https://www.collinsdictionary.com/images/full/hamster_102645029.jpg'),
+              imageProvider: AssetImage(
+                  'assets/image4.jpg'),
               enableRotation: false,
               maxScale: PhotoViewComputedScale.covered,
               minScale: PhotoViewComputedScale.contained * 0.6,
               backgroundDecoration: BoxDecoration(color: Colors.white),
             )
-            // color: Colors.teal[100],
-            ),
+          // color: Colors.teal[100],
+        ),
         Container(
             padding: const EdgeInsets.all(8),
             child: PhotoView(
-              imageProvider: NetworkImage(
-                  'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lionel-animals-to-follow-on-instagram-1568319926.jpg?crop=0.922xw:0.738xh;0.0555xw,0.142xh&resize=640:*'),
+              imageProvider: AssetImage(
+                  'assets/image5.jpg'),
               enableRotation: false,
               maxScale: PhotoViewComputedScale.covered,
               minScale: PhotoViewComputedScale.contained * 0.6,
               backgroundDecoration: BoxDecoration(color: Colors.white),
             )
-            // color: Colors.teal[100],
-            ),
+          // color: Colors.teal[100],
+        ),
         Container(
             padding: const EdgeInsets.all(8),
             child: PhotoView(
-              imageProvider: NetworkImage(
-                  'https://www.niusnews.com/upload/imgs/default/202109_____Choco/0915/dog-4988985_1280.jpg'),
+              imageProvider: AssetImage(
+                  'assets/image6.jpg'),
               enableRotation: false,
               maxScale: PhotoViewComputedScale.covered,
               minScale: PhotoViewComputedScale.contained * 0.6,
               backgroundDecoration: BoxDecoration(color: Colors.white),
             )
-            // color: Colors.teal[100],
+          // color: Colors.teal[100],
 
-            ),
+        ),
         Container(
             padding: const EdgeInsets.all(8),
             child: PhotoView(
-              imageProvider: NetworkImage(
-                  'https://i.chzbgr.com/full/9146605568/h37207BF2/upsidedown-mammal-sloth'),
+              imageProvider:AssetImage(
+                  'assets/image7.jpg'),
               enableRotation: false,
               maxScale: PhotoViewComputedScale.covered,
               minScale: PhotoViewComputedScale.contained * 0.6,
               backgroundDecoration: BoxDecoration(color: Colors.white),
             )
-            // color: Colors.teal[100],
+          // color: Colors.teal[100],
 
-            ),
+        ),
         Container(
             padding: const EdgeInsets.all(8),
             child: PhotoView(
-              imageProvider: NetworkImage(
-                  'https://media-cdn.tripadvisor.com/media/photo-s/15/cb/7d/7d/fox.jpg'),
+              imageProvider:AssetImage(
+                  'assets/image8.jpg'),
               enableRotation: false,
               maxScale: PhotoViewComputedScale.covered,
               minScale: PhotoViewComputedScale.contained * 0.6,
               backgroundDecoration: BoxDecoration(color: Colors.white),
             )
-            // color: Colors.teal[100],
+          // color: Colors.teal[100],
 
-            ),
+        ),
       ],
     );
 
