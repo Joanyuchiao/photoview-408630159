@@ -50,7 +50,7 @@ class MyHomePage extends StatelessWidget {
                 return PhotoViewGalleryPageOptions(
                   imageProvider: AssetImage(images[index]),
                   minScale: PhotoViewComputedScale.contained * 0.8,
-                  maxScale: PhotoViewComputedScale.covered * 2,
+                  maxScale: PhotoViewComputedScale.covered ,
                 );
               },
               scrollPhysics: BouncingScrollPhysics(),
@@ -60,6 +60,8 @@ class MyHomePage extends StatelessWidget {
               loadingChild: Center(
                 child: CircularProgressIndicator(),
               ),
+              enableRotation: false,
+
             ),
           // color: Colors.teal[100],
         ),
@@ -71,7 +73,7 @@ class MyHomePage extends StatelessWidget {
                 return PhotoViewGalleryPageOptions(
                   imageProvider: AssetImage(images[index+1]),
                   minScale: PhotoViewComputedScale.contained * 0.8,
-                  maxScale: PhotoViewComputedScale.covered * 2,
+                  maxScale: PhotoViewComputedScale.covered ,
                 );
               },
               scrollPhysics: BouncingScrollPhysics(),
@@ -81,6 +83,7 @@ class MyHomePage extends StatelessWidget {
               loadingChild: Center(
                 child: CircularProgressIndicator(),
               ),
+              enableRotation: false,
             ),
           // color: Colors.teal[100],
         ),
@@ -92,7 +95,7 @@ class MyHomePage extends StatelessWidget {
                 return PhotoViewGalleryPageOptions(
                   imageProvider: AssetImage(images[index+2]),
                   minScale: PhotoViewComputedScale.contained * 0.8,
-                  maxScale: PhotoViewComputedScale.covered * 2,
+                  maxScale: PhotoViewComputedScale.covered ,
                 );
               },
               scrollPhysics: BouncingScrollPhysics(),
@@ -102,6 +105,7 @@ class MyHomePage extends StatelessWidget {
               loadingChild: Center(
                 child: CircularProgressIndicator(),
               ),
+              enableRotation: false,
             ),
           // color: Colors.teal[100],
         ),
@@ -113,7 +117,7 @@ class MyHomePage extends StatelessWidget {
                 return PhotoViewGalleryPageOptions(
                   imageProvider: AssetImage(images[index+3]),
                   minScale: PhotoViewComputedScale.contained * 0.8,
-                  maxScale: PhotoViewComputedScale.covered * 2,
+                  maxScale: PhotoViewComputedScale.covered ,
                 );
               },
               scrollPhysics: BouncingScrollPhysics(),
@@ -123,6 +127,7 @@ class MyHomePage extends StatelessWidget {
               loadingChild: Center(
                 child: CircularProgressIndicator(),
               ),
+              enableRotation: false,
             ),
           // color: Colors.teal[100],
         ),
@@ -134,7 +139,7 @@ class MyHomePage extends StatelessWidget {
                 return PhotoViewGalleryPageOptions(
                   imageProvider: AssetImage(images[index+4]),
                   minScale: PhotoViewComputedScale.contained * 0.8,
-                  maxScale: PhotoViewComputedScale.covered * 2,
+                  maxScale: PhotoViewComputedScale.covered ,
                 );
               },
               scrollPhysics: BouncingScrollPhysics(),
@@ -144,6 +149,7 @@ class MyHomePage extends StatelessWidget {
               loadingChild: Center(
                 child: CircularProgressIndicator(),
               ),
+              enableRotation: false,
             ),
           // color: Colors.teal[100],
         ),
@@ -155,7 +161,7 @@ class MyHomePage extends StatelessWidget {
                 return PhotoViewGalleryPageOptions(
                   imageProvider: AssetImage(images[index+5]),
                   minScale: PhotoViewComputedScale.contained * 0.8,
-                  maxScale: PhotoViewComputedScale.covered * 2,
+                  maxScale: PhotoViewComputedScale.covered ,
                 );
               },
               scrollPhysics: BouncingScrollPhysics(),
@@ -165,6 +171,7 @@ class MyHomePage extends StatelessWidget {
               loadingChild: Center(
                 child: CircularProgressIndicator(),
               ),
+              enableRotation: false,
             ),
           // color: Colors.teal[100],
 
@@ -177,7 +184,7 @@ class MyHomePage extends StatelessWidget {
                 return PhotoViewGalleryPageOptions(
                   imageProvider: AssetImage(images[index+6]),
                   minScale: PhotoViewComputedScale.contained * 0.8,
-                  maxScale: PhotoViewComputedScale.covered * 2,
+                  maxScale: PhotoViewComputedScale.covered ,
                 );
               },
               scrollPhysics: BouncingScrollPhysics(),
@@ -187,6 +194,7 @@ class MyHomePage extends StatelessWidget {
               loadingChild: Center(
                 child: CircularProgressIndicator(),
               ),
+              enableRotation: false,
             ),
           // color: Colors.teal[100],
 
@@ -199,7 +207,7 @@ class MyHomePage extends StatelessWidget {
                 return PhotoViewGalleryPageOptions(
                   imageProvider: AssetImage(images[index+7]),
                   minScale: PhotoViewComputedScale.contained * 0.8,
-                  maxScale: PhotoViewComputedScale.covered * 2,
+                  maxScale: PhotoViewComputedScale.covered ,
                 );
               },
               scrollPhysics: BouncingScrollPhysics(),
@@ -209,6 +217,7 @@ class MyHomePage extends StatelessWidget {
               loadingChild: Center(
                 child: CircularProgressIndicator(),
               ),
+              enableRotation: false,
             ),
           // color: Colors.teal[100],
 
